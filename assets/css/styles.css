@@ -1,0 +1,90 @@
+/* Border-box Fix */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.8)),
+        url(../images/plasma.jpg) fixed;
+    background-size: cover;
+	background-position: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 130%;
+    overflow-x: hidden;
+    margin: 0;
+	color: white;
+}
+.content-wrap {
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+    max-width: 907px;
+}
+a {
+    margin: 10px;
+    display: inline-block;
+	color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
+/* Header */
+header {
+    position: relative;
+	text-align: left;
+    opacity: 1;
+    transition: 0.75s opacity;
+}
+.top-left {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	top: 0px;
+}
+.bottom-left {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	bottom: 0px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.80)),
+        url(../images/launch.jpg) no-repeat fixed;
+    background-size: cover;
+	background-position: center;
+}
+
+/* Fade Effect */
+.fade-in {
+    opacity: 1;
+    transition: 1s opacity 0.75s;
+}
+.fade {
+    opacity: 0;
+    transition: 0;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 590px) {
+	.small-dev {
+		display: none;
+	}
+}
+
+@media (max-width: 590px) {
+    .top-left, .bottom-left {
+		display: none;
+	}
+}
