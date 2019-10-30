@@ -9,10 +9,10 @@ html {
 
 /* Global Styles */
 body {
-    background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.8)),
-        url(../images/plasma.jpg) fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+        url(../images/light-night.jpg) fixed;
     background-size: cover;
-	background-position: center;
+	background-position: bottom;
     font-family: 'Roboto', sans-serif;
     font-size: 130%;
     overflow-x: hidden;
@@ -38,27 +38,25 @@ a:hover {
 /* Header */
 header {
     position: relative;
-	text-align: left;
-    opacity: 1;
-    transition: 0.75s opacity;
+	text-align: center;
+	background-color: black;
+	padding: 50px 50px;
+	overflow: auto;
 }
-.top-left {
-	position: absolute;
-	left: 40px;
-	right: 40px;
-	top: 0px;
+.logo-title {
+	font-size: 5em;
+	display: inline-block;
 }
-.bottom-left {
-	position: absolute;
-	left: 40px;
-	right: 40px;
-	bottom: 0px;
+.logo {
+	height: 10em;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.80)),
+    background: linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.65)),
         url(../images/launch.jpg) no-repeat fixed;
     background-size: cover;
 	background-position: center;
@@ -77,14 +75,9 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 590px) {
-	.small-dev {
-		display: none;
-	}
-}
-
-@media (max-width: 590px) {
-    .top-left, .bottom-left {
+/* header adjustment */
+@media (max-width: 648px) {
+    .logo-title {
 		display: none;
 	}
 }
