@@ -39,8 +39,8 @@ a:hover {
 header {
     position: relative;
 	text-align: center;
-	background-color: black;
-	padding: 50px 50px;
+	background-color: transparent;
+	padding: 50px 50px 0px 50px;
 	overflow: auto;
 }
 .logo-title {
